@@ -152,35 +152,6 @@ Sample workflow for development:
 2. `make build-run-testing`   - Builds an Runs a container without invoking the `main.py` script. Useful for an `it` Docker session for development
 3. `make cleanup-testing`     - Cleans up the testing container created from `build-run-testing`
 
-## Development version 💻
-
-To use the development version with the latest feature and fixes just switch to `development` branch using Git:
-
-`git checkout development`
-
-and update to last version using:
-
-`git pull origin development`
-
-
-## Updating ⬇️
-
-To update Osintgram with the stable release just pull the latest commit using Git.
-
-1. Make sure you are in the master branch running: `git checkout master`
-2. Download the latest version: `git pull origin master`
-
-
-## Contributing 💡
-
-You can propose a feature request opening an issue or a pull request.
-
-Here is a list of Osintgram's contributors:
-
-<a href="https://github.com/Datalux/Osintgram/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Datalux/Osintgram" />
-</a>
-
-## External library 🔗
+rary 🔗
 
 [Instagram API](https://github.com/ping/instagram_private_api)
