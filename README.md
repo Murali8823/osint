@@ -1,20 +1,4 @@
-# Osintgram 🔎📸
 
-[![version-1.3](https://img.shields.io/badge/version-1.3-green)](https://github.com/Datalux/Osintgram/releases/tag/1.3)
-[![GPLv3](https://img.shields.io/badge/license-GPLv3-blue)](https://img.shields.io/badge/license-GPLv3-blue)
-[![Python3](https://img.shields.io/badge/language-Python3-red)](https://img.shields.io/badge/language-Python3-red)
-[![Telegram](https://img.shields.io/badge/Telegram-Channel-blue.svg)](https://t.me/osintgram)
-[![Docker](https://img.shields.io/badge/Docker-Supported-blue)](https://img.shields.io/badge/Docker-Supported-blue)
-
-Osintgram is an **OSINT** tool on Instagram to collect, analyze, and run reconnaissance.
-
-<p align="center">
-<img align="center" src=".img/carbon.png" width="900">
-</p>
-
-Disclaimer: **FOR EDUCATIONAL PURPOSE ONLY! The contributors do not assume any responsibility for the use of this tool.**
-
-Warning: It is advisable to **not** use your own/primary account when using this tool.
 
 ## Tools and Commands 🧰
 
@@ -43,22 +27,10 @@ Osintgram offers an interactive shell to perform analysis on Instagram account o
 - wtagged         Get a list of user who tagged target
 ```
 
-You can find detailed commands usage [here](doc/COMMANDS.md).
-
-[**Latest version**](https://github.com/Datalux/Osintgram/releases/tag/1.3) |
-[Commands](doc/COMMANDS.md) |
-[CHANGELOG](doc/CHANGELOG.md)
-
-## FAQ
-1. **Can I access the contents of a private profile?** No, you cannot get information on private profiles. You can only get information from a public profile or a profile you follow. The tools that claim to be successful are scams!
-2. **What is and how I can bypass the `challenge_required` error?** The `challenge_required` error means that Instagram notice a suspicious behavior on your profile, so needs to check if you are a real person or a bot. To avoid this you should follow the suggested link and complete the required operation (insert a code, confirm email, etc)
 
 
-## Installation ⚙️
 
-1. Fork/Clone/Download this repo
 
-    `git clone https://github.com/Datalux/Osintgram.git`
 
 2. Navigate to the directory
 
@@ -137,21 +109,5 @@ Alternatively, you may run `docker-compose` with the `Makefile`:
 
 `make run` - Builds and Runs with compose. Prompts for a `target` before running.
 
-### Makefile (easy mode)
-
-For ease of use with Docker-compose, a `Makefile` has been provided.
-
-Here is a sample work flow to spin up a container and run `osintgram` with just two commands!
-
-1. `make setup`   - Sets up your Instagram credentials
-2. `make run`     - Builds and Runs a osintgram container and prompts for a target
-
-Sample workflow for development:
-
-1. `make setup`          - Sets up your Instagram credentials
-2. `make build-run-testing`   - Builds an Runs a container without invoking the `main.py` script. Useful for an `it` Docker session for development
-3. `make cleanup-testing`     - Cleans up the testing container created from `build-run-testing`
-
-rary 🔗
 
 [Instagram API](https://github.com/ping/instagram_private_api)
